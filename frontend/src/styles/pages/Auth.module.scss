@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background: linear-gradient(
+    30deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+
+  .quest {
+    margin-top: 1rem;
+    button {
+      display: inline;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: var(--color-primary);
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}

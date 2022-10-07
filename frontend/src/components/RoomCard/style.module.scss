@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+  gap: 0.8rem;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  padding: 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    margin: 1rem 0.3rem;
+    color: var(--color-active);
+    font-size: 1.3rem;
+    button {
+      background-color: var(--color-danger);
+      color: var(--color-active);
+      border: none;
+      outline: none;
+      padding: 0.3rem;
+      margin-left: 0.5rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-active);
+    background-color: var(--color-muted);
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--color-muted);
+      background-color: var(--color-active);
+    }
+  }
+}
